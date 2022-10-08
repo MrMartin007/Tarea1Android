@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Registrar Producto"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextCodProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="codigo producto"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="161dp" />
+
+        <EditText
+            android:id="@+id/editTextNameProduct"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="Nombre Producto"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="373dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:hint="Precio"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="#4CAF50"
+            android:drawableEnd="@android:drawable/ic_menu_save"
+            android:onClick="onClick"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnGuardar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="-49dp"
+            android:backgroundTint="#F44336"
+            android:drawableEnd="@android:drawable/ic_menu_rotate"
+            android:onClick="onClick"
+            android:text="Regresar" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

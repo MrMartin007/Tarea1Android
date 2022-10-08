@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Tarea1AndroidDisWeb.AppBarOverlay"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="30dp"
+            android:text="Registro de Productos"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3F51B5"
+            android:drawableEnd="@android:drawable/ic_menu_add"
+            android:onClick="onClick"
+            android:text="Registrar Producto" />
+
+        <Button
+            android:id="@+id/btnListaProducto"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1C71B5"
+            android:drawableEnd="?android:attr/listChoiceIndicatorSingle"
+            android:onClick="onClick"
+            android:text="Lista deProducto " />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
